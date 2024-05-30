@@ -1,4 +1,4 @@
-let divNum = 50;
+let divNum = 16;
 
 const container = document.querySelector(".container");
 
@@ -32,7 +32,7 @@ function createColumn(divNum){
 }
 
 function createRows(divNum){
-
+    container.replaceChildren();
     let i = 0; 
     while (i < divNum){
         
@@ -42,6 +42,25 @@ function createRows(divNum){
     
 }
 
-console.log(container);
+const button = document.querySelector("button");
+
+button.addEventListener("click", pickSize)
 
 createRows(divNum);
+
+
+function pickSize (){
+   const pick = prompt("Pick number of squer per colum but no more then 100");
+
+   if (isNaN(Number(pick))){
+   
+    console.log("Please pick number up to a 100");
+   }
+
+   else if (Number(pick) > 100){
+    console.log("U picked more than 100. Please pick number up to a 100");
+   }
+   else {
+        createRows(Number(pick));  
+   }
+}

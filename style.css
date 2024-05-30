@@ -1,6 +1,15 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;  
+    position: absolute;
+    background-color:  #0a3041;
+}
+
 .container {
-    
-    
     width: 960px;
     height: 960px;
     background-color: rgb(146, 95, 29);
@@ -13,6 +22,27 @@
 
 .tile{
    border: 2px solid white;
-   background: rgb(90, 90, 90);
+   background: #b0bec4;
    box-sizing: border-box;
 }
+button{
+    margin-bottom: 30px;
+    padding:10px 30px ;
+    background-color: ;
+    background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%);
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    padding: 1rem 1.75rem;
+}
+
+
+
+
+.button:hover {
+  background-image: linear-gradient(-180deg, #1D95C9 0%, #17759C 100%);
+}
+
