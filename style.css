@@ -12,7 +12,7 @@ body{
 .container {
     width: 960px;
     height: 960px;
-    background-color: rgb(146, 95, 29);
+    background-color: black;
    
 }
 
@@ -21,14 +21,13 @@ body{
 }
 
 .tile{
-   border: 2px solid white;
+   border: 0px solid white;
    background: #b0bec4;
    box-sizing: border-box;
 }
 button{
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     padding:10px 30px ;
-    background-color: ;
     background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%);
     border-radius: .5rem;
     box-sizing: border-box;
@@ -39,7 +38,10 @@ button{
     padding: 1rem 1.75rem;
 }
 
-
+p {
+    color: aliceblue;
+    margin-bottom: 30px;
+}
 
 
 .button:hover {
